@@ -15,9 +15,8 @@ async function initializeBlockedSites() {
     // Default sites
     blockedSites = [
       "reddit.com",
-      "www.reddit.com", 
-      "seznam.cz",
-      "www.seznam.cz"
+      "youtube.com",
+      "facebook.com"
     ];
     await browser.storage.local.set({ blockedSites });
     console.log("Set default blocked sites:", blockedSites);
