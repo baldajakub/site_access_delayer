@@ -1,116 +1,123 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Site Access Delayer - Settings</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            width: 400px;
-            min-height: 500px;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-            margin-top: 0;
-            font-size: 20px;
-        }
-        .input-group {
-            display: flex;
-            margin-bottom: 20px;
-        }
-        #siteInput {
-            flex: 1;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px 0 0 5px;
-            font-size: 14px;
-        }
-        #addSite {
-            padding: 10px 15px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            border-radius: 0 5px 5px 0;
-            cursor: pointer;
-        }
-        #addSite:hover {
-            background-color: #2980b9;
-        }
-        .site-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .site-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            margin-bottom: 5px;
-            background-color: #f8f9fa;
-            border-radius: 5px;
-            border-left: 4px solid #e74c3c;
-        }
-        .site-url {
-            flex: 1;
-            word-break: break-all;
-        }
-        .remove-btn {
-            background: none;
-            border: none;
-            color: #e74c3c;
-            cursor: pointer;
-            font-size: 16px;
-            padding: 5px;
-            margin-left: 10px;
-        }
-        .remove-btn:hover {
-            color: #c0392b;
-        }
-        .empty-message {
-            text-align: center;
-            color: #7f8c8d;
-            font-style: italic;
-            padding: 20px;
-        }
-        .instructions {
-            font-size: 12px;
-            color: #7f8c8d;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid #ecf0f1;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        width: 400px;
+        min-height: 500px;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      .container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333;
+        margin-top: 0;
+        font-size: 20px;
+      }
+      .input-group {
+        display: flex;
+        margin-bottom: 20px;
+      }
+      #siteInput {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px 0 0 5px;
+        font-size: 14px;
+      }
+      #addSite {
+        padding: 10px 15px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+      }
+      #addSite:hover {
+        background-color: #2980b9;
+      }
+      .site-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .site-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 5px;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        border-left: 4px solid #e74c3c;
+      }
+      .site-url {
+        flex: 1;
+        word-break: break-all;
+      }
+      .remove-btn {
+        background: none;
+        border: none;
+        color: #e74c3c;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 5px;
+        margin-left: 10px;
+      }
+      .remove-btn:hover {
+        color: #c0392b;
+      }
+      .empty-message {
+        text-align: center;
+        color: #7f8c8d;
+        font-style: italic;
+        padding: 20px;
+      }
+      .instructions {
+        font-size: 12px;
+        color: #7f8c8d;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #ecf0f1;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>🛑 Blocked Sites</h1>
-        
-        <div class="input-group">
-            <input type="text" id="siteInput" placeholder="Enter website (e.g., youtube.com)">
-            <button id="addSite">Add</button>
-        </div>
-        
-        <ul id="siteList" class="site-list">
-            <!-- Sites will be loaded here -->
-        </ul>
-        
-        <div class="instructions">
-            <p><strong>How it works:</strong></p>
-            <p>When you visit any site in this list, you'll see a 10-second waiting page first.</p>
-            <p>Examples: "reddit.com", "youtube.com", "facebook.com"</p>
-        </div>
+      <h1>🛑 Blocked Sites</h1>
+
+      <div class="input-group">
+        <input
+          type="text"
+          id="siteInput"
+          placeholder="Enter website (e.g., youtube.com)"
+        />
+        <button id="addSite">Add</button>
+      </div>
+
+      <ul id="siteList" class="site-list">
+        <!-- Sites will be loaded here -->
+      </ul>
+
+      <div class="instructions">
+        <p><strong>How it works:</strong></p>
+        <p>
+          When you visit any site in this list, you'll see a 10-second waiting
+          page first.
+        </p>
+        <p>Examples: "reddit.com", "youtube.com", "facebook.com"</p>
+      </div>
     </div>
-    
+
     <script src="settings.js"></script>
-</body>
+  </body>
 </html>

@@ -1,90 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Think Before You Browse</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 100px auto;
-            padding: 20px;
-            text-align: center;
-            background-color: #f5f5f5;
-        }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .timer {
-            font-size: 48px;
-            font-weight: bold;
-            color: #e74c3c;
-            margin: 20px 0;
-        }
-        .message {
-            font-size: 18px;
-            margin: 20px 0;
-            color: #333;
-            min-height: 24px;
-        }
-        .continue-btn {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px;
-        }
-        .cancel-btn {
-            background-color: #95a5a6;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px;
-        }
-        button:hover {
-            opacity: 0.9;
-        }
-        button:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-        .sub-message {
-            font-size: 14px;
-            color: #7f8c8d;
-            margin-top: 10px;
-            font-style: italic;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 100px auto;
+        padding: 20px;
+        text-align: center;
+        background-color: #f5f5f5;
+      }
+      .container {
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .timer {
+        font-size: 48px;
+        font-weight: bold;
+        color: #e74c3c;
+        margin: 20px 0;
+      }
+      .message {
+        font-size: 18px;
+        margin: 20px 0;
+        color: #333;
+        min-height: 24px;
+      }
+      .continue-btn {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+      }
+      .cancel-btn {
+        background-color: #95a5a6;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+      }
+      button:hover {
+        opacity: 0.9;
+      }
+      button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+      .sub-message {
+        font-size: 14px;
+        color: #7f8c8d;
+        margin-top: 10px;
+        font-style: italic;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1 id="title">⏳ Existential Crisis Pending</h1>
-        <div class="message" id="message1">
-            Loading existential dread...
-        </div>
-        <div class="timer" id="timer">10</div>
-        <div class="message" id="message2">
-            Contemplating life choices...
-        </div>
-        <div class="sub-message" id="timerMessage">
-            Seconds ticking away... just like your youth
-        </div>
-        <button id="continue" class="continue-btn" disabled>
-            Continue (10s)
-        </button>
-        <button id="cancel" class="cancel-btn">
-            Go Back
-        </button>
+      <h1 id="title">⏳ Existential Crisis Pending</h1>
+      <div class="message" id="message1">Loading existential dread...</div>
+      <div class="timer" id="timer">10</div>
+      <div class="message" id="message2">Contemplating life choices...</div>
+      <div class="sub-message" id="timerMessage">
+        Seconds ticking away... just like your youth
+      </div>
+      <button id="continue" class="continue-btn" disabled>
+        Continue (10s)
+      </button>
+      <button id="cancel" class="cancel-btn">Go Back</button>
     </div>
     <script src="waiting.js"></script>
-</body>
+  </body>
 </html>
