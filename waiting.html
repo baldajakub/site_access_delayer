@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Think Before You Browse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .timer {
+            font-size: 48px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 20px 0;
+        }
+        .message {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #333;
+        }
+        .continue-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .cancel-btn {
+            background-color: #95a5a6;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⏰ Time to Think 💩</h1>
+        <div class="message">
+            You're about to visit a potentially shitty website.
+        </div>
+        <div class="timer" id="timer">10</div>
+        <div class="message">
+            Take a moment to consider if this is how you want to spend your life.
+        </div>
+        <button id="continue" class="continue-btn" disabled>
+            Continue (10s)
+        </button>
+        <button id="cancel" class="cancel-btn">
+            Go Back
+        </button>
+    </div>
+    <script src="waiting.js"></script>
+</body>
+</html>
