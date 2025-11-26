@@ -58,9 +58,8 @@ site-access-delayer/
 ## 🎨 Default Blocked Sites
 
 - `reddit.com`
-- `www.reddit.com`
-- `seznam.cz`
-- `www.seznam.cz`
+- `youtube.com`
+- `facebook.com`
 
 *You can easily add or remove sites in the settings!*
 
