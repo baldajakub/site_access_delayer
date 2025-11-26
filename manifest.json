@@ -3,7 +3,7 @@
   "name": "Site Access Delayer",
   "version": "1.1",
   "description": "Take a mindful pause before visiting distracting websites. Adds a 10-second waiting page to help you think before browsing time-wasting sites.",
-  "homepage_url": "https://github.com/your-username/site-access-delayer",
+  "homepage_url": "https://github.com/baldajakub/site_access_delayer",
   "permissions": [
     "webRequest", 
     "webRequestBlocking", 
@@ -36,10 +36,13 @@
     "96": "icons/icon-96.png",
     "128": "icons/icon-128.png"
   },
-  "author": "Your Name",
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
-      "id": "site-access-delayer@yourdomain.com"
+      "id": "{site-access-delayer@github.baldajakub}",
+      "strict_min_version": "42.0",
+      "data_collection_permissions": [
+        "not_used"
+      ]
     }
   }
 }
